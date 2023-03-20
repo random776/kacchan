@@ -1,10 +1,10 @@
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import Ringo from "/apple.jpeg";
-import Chikurin from "/chikurin.jpeg";
-import Flower from "/apple.jpg";
-import Funabashi from "/funabashi.jpg";
+import Ringo from '/apple.jpeg';
+import Chikurin from '/chikurin.jpeg';
+import Flower from '/flower.jpg';
+import Funabashi from '/funabashi.jpg';
 import Sakura from '/sakura.jpeg'
 import Utokyo from '/utokyo.jpeg'
 import Yellow from '/yello.jpeg'
