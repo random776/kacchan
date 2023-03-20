@@ -1,6 +1,13 @@
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import Ringo from "/apple.jpeg";
+import Chikurin from "/chikurin.jpeg";
+import Flower from "/apple.jpg";
+import Funabashi from "/funabashi.jpg";
+import Sakura from '/sakura.jpeg'
+import Utokyo from '/utokyo.jpeg'
+import Yellow from '/yello.jpeg'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -10,25 +17,25 @@ function App() {
       <div className="box">
         <AutoPlaySwipeableViews>
           <div>
-            <img src="./pictures/apple.jpeg" alt="りんご" />
+            <img src={Ringo} alt="りんご" />
           </div>
           <div>
-            <img src="./pictures/chikurin.jpeg" alt="竹林" />
+            <img src={Chikurin} alt="竹林" />
           </div>
           <div>
-            <img src="./pictures/flower.jpg" alt="花" />
+            <img src={Flower} alt="花" />
           </div>
           <div>
-            <img src="./pictures/funabashi.jpg" alt="駅" />
+            <img src={Funabashi} alt="駅" />
           </div>
           <div>
-            <img src="./pictures/sakura.jpeg" alt="桜" />
+            <img src={Sakura} alt="桜" />
           </div>
           <div>
-            <img src="./pictures/utokyo.jpeg" alt="東大" />
+            <img src={Utokyo} alt="東大" />
           </div>
           <div>
-            <img src="./pictures/yello.jpeg" alt="黄色い花" />
+            <img src={Yellow} alt="黄色い花" />
           </div>
         </AutoPlaySwipeableViews>
       </div>
