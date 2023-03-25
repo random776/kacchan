@@ -37,13 +37,17 @@ li {
 }
 
 #oshirase {
-  overflow: scroll; height: 200px; padding: 10px; border: 1px solid gray
+  overflow: scroll;
+  background-color: white;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid gray;
 }
 
 .color {
-  padding: 0.25em 0.5em;/*上下 左右の余白*/
-  background: transparent;/*背景透明に*/
-  border-left: solid 6px #546ce0;/*左線*/
+  padding: 0.25em 0.5em; /*上下 左右の余白*/
+  background: transparent; /*背景透明に*/
+  border-left: solid 6px #546ce0; /*左線*/
   color: rgb(9, 9, 104);
   font-size: 1.2rem;
 }
@@ -60,13 +64,13 @@ li {
     width: 275px;
     padding: 5px;
     background-color: rgb(202, 255, 205);
-}
+  }
 
   div#info {
     padding: 10px;
     float: left;
-    width: calc(100% - 325px); 
-}
+    width: calc(100% - 325px);
+  }
 }
 
 #helpful {
