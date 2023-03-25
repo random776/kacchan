@@ -1,7 +1,7 @@
 body {
   font-family: "游ゴシック Light", sans-serif;
-  margin: 50px;
-  background-color: rgb(214, 255, 252);
+  background-color: rgb(232, 255, 253);
+  margin: 0px;
   line-height: 26px;
 }
 .box {
@@ -37,14 +37,13 @@ li {
 }
 
 #oshirase {
-  width: 90%;
-  padding: 5%;
-  height: 200px;
-  overflow: scroll;
-  border: 1px dashed rgb(0, 174, 255);
+  overflow: scroll; height: 200px; padding: 10px; border: 1px solid gray
 }
 
 .color {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 6px #546ce0;/*左線*/
   color: rgb(9, 9, 104);
   font-size: 1.2rem;
 }
@@ -57,7 +56,7 @@ li {
   div#info1 {
     float: left;
     margin: 5px;
-    padding: 5あpx;
+    padding: 5px;
     width: 275px;
     padding: 5px;
     background-color: rgb(202, 255, 205);
@@ -68,6 +67,17 @@ li {
     float: left;
     width: calc(100% - 325px); 
 }
+}
+
+#helpful {
+  padding: 10px;
+  float: left;
+  width: 70%;
+}
+
+#tool {
+  padding: 10px;
+  background-color: white;
 }
 
 @media (max-width: 560px) {
@@ -109,10 +119,6 @@ li {
     width: 600px;
   }
 
-  .color {
-    color: rgb(9, 9, 104);
-    font-size: 1.2rem;
-  }
   #chart_ {
     width: 100%;
   }
