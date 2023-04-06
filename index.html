@@ -54,25 +54,34 @@
         src="https://platform.twitter.com/widgets.js"
         charset="utf-8"
       ></script>
-      <p><a href="https://sho-monai.onrender.com/twitter.html">かっちゃんの最近のツイートはこちら</a></p>
+      <p>
+        <a href="https://sho-monai.onrender.com/twitter.html"
+          >かっちゃんの最近のツイートはこちら</a
+        >
+      </p>
     </div>
     <div id="info">
       <p class="color">更新情報・お知らせ</p>
       <div id="oshirase">
-        <p>2023/3/26</p>
+        <p>2023/04/06</p>
+        <p>
+          番外編のツイート数を久しぶりに更新しました。
+        </p>
+        <p>2023/03/26</p>
         <p>
           見出しのデザインを変更しました。<br />
-          また、<a href="https://sho-monai.onrender.com/twitter.html">twitterのタイムラインを載せたページ</a
+          また、<a href="https://sho-monai.onrender.com/twitter.html"
+            >twitterのタイムラインを載せたページ</a
           >を作成しました。
         </p>
         <hr />
-        <p>2023/3/24</p>
+        <p>2023/03/24</p>
         <p>Twitterの埋め込みに成功しました。</p>
         <hr />
-        <p>2023/3/23</p>
+        <p>2023/03/23</p>
         <p>お知らせをスクロール可能にし、ロゴマークを定めました。</p>
         <hr />
-        <p>2023/3/22</p>
+        <p>2023/03/22</p>
         <p>PC版のサイト構成を2段構えにしました。</p>
       </div>
       <p class="color">最近の作品</p>
@@ -159,8 +168,9 @@
       "1月",
       "2月",
       "3月",
+      "4月",
     ];
-    const number = [7, 4, 11, 2, 0, 0, 0, 1, 5, 22, 9, 21, 69];
+    const number = [7, 4, 11, 2, 0, 0, 0, 1, 5, 22, 9, 21, 98, 16];
     const total = number.reduce((sum, element) => sum + element, 0);
     msg.innerText = `合計ツイート数：${total}`;
     const myChart = new Chart(ctx, {

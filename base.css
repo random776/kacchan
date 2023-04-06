@@ -73,17 +73,6 @@ li {
   }
 }
 
-#helpful {
-  padding: 10px;
-  float: left;
-  width: 70%;
-}
-
-#tool {
-  padding: 10px;
-  background-color: white;
-}
-
 @media (max-width: 560px) {
   body {
     font-family: "游ゴシック Light", sans-serif;
