@@ -1,0 +1,74 @@
+body {
+    font-family: "游ゴシック Light", sans-serif;
+  }
+
+#menu-bar ul {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(0, 166, 255, 0.813);
+}
+#menu-bar ul li {
+    width: max-content;
+    margin: 0px;
+    padding: 5px;
+    height: 25px;
+}
+
+#menu-bar ul li a {
+    color: aliceblue;
+}
+
+#nav-content ul {
+    width: 100%;
+    background-color: rgb(0, 166, 255, 0.813);
+}
+
+#nav-content ul li a {
+    color: aliceblue;
+}
+.sonota {
+    margin: 10px;
+}
+
+.color {
+    font-size: 1.2rem;
+    border-bottom: solid 3px skyblue;
+    position: relative;
+  }
+  
+.color:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #ffc778;
+    bottom: -3px;
+    width: 30%;
+  }
+
+.color2 {
+    font-size: 1.1rem;
+    border-bottom: solid 3px rgb(135, 235, 160);
+    position: relative;
+  }
+  
+.color2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #78ffef;
+    bottom: -3px;
+    width: 30%;
+  }
+
+#oshirase {
+    overflow: scroll;
+    background-color: white;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+
+.height {
+    line-height: 30px;
+}
