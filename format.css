@@ -177,6 +177,11 @@ header ul {
     @keyframes slide4 { 0% {opacity: 0;} 70% {opacity: 0; transform: scale(1.1);} 80% {opacity: 1;} 90% {opacity: 1;} 100% {opacity: 0; transform: scale(1.0);}
     }
 
+.card_format {
+  display: inline-block;
+  margin: 5px;
+}
+
 @media screen and (max-width:767px) {
   #menu-bar {
     display:none;
