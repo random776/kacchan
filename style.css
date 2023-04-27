@@ -146,17 +146,6 @@ body {
   margin: 5px;
 }
 
-@media screen and (max-width:400px) {
-  .card_style {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .card {
-    height: 300px;
-  }
-}
-
 @media screen and (max-width:594px) {
   .card_style {
     display: grid;
@@ -190,5 +179,13 @@ body {
   }
 }
 
-
-
+@media screen and (max-width:400px) {
+  .card_style {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .card {
+    height: 300px;
+  }
+}
