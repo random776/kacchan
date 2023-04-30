@@ -1,6 +1,15 @@
 body {
     font-family: "游ゴシック Light", sans-serif;
-  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 350;
+}
+
+h2 {
+  font-weight: 350;
+}
 
 #menu-bar ul {
     text-align: center;
