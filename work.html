@@ -5,6 +5,7 @@
   <title>かっちゃん広報板 東大駒場ランゲルハンス棟</title>
   <link rel="stylesheet" href="./format.css" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/news.css">
   <body>
     <header>
       <div class="header-logo-menu">
@@ -16,7 +17,7 @@
             <header>
               <ul>
                 <li><a href="./index.html" class="btn4">HOME</a></li>
-                <li><a href="./work.html" class="btn2">最近の作品</a></li>
+                <li><a href="./work.html" class="btn2">ニュース</a></li>
                 <li><a href="./contact.html" class="btn4">連絡先（SNS）</a></li>
                 <li>
                   <a href="./helpful.html" class="btn4"
@@ -37,7 +38,7 @@
       <div id="menu-bar">
         <ul>
           <li><a href="./index.html" class="btn4">HOME</a></li>
-          <li><a href="./work.html" class="btn2">最近の作品</a></li>
+          <li><a href="./work.html" class="btn2">ニュース</a></li>
           <li><a href="./contact.html" class="btn4">連絡先（SNS）</a></li>
           <li>
             <a href="./helpful.html" class="btn4">東大理系生お役立ちツール</a>
@@ -53,192 +54,53 @@
       </div>
     </header>
     <div class="sonota">
-      <h2 class="color">最近の作品</h2>
-      <p>中の人が、プログラミングの練習のために作ったWebツール集です。</p>
-      <p>
-        こちらの<a href="https://github.com/random776">GitHubアカウント</a
-        >で一部のソースコードを公開していますので是非ご覧ください。
-      </p>
-      <div class="card_style">
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/gogatsubyo.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">あなたが五月病になるまで</div>
-            <div class="card__overviewtext">
-              あなたが五月病になるまであと何日かを常に表示してくれます。ただし、すでに五月病に罹っているうp主には関係ないことです。
+      <h2 class="color">ニュース・お知らせ</h2>
+      <p>過去1年間のニュースやお知らせを掲載しております。</p>
+      <div id="news">
+        <div id="news_oshirase-viewer">
+          <div id="news_oshirase">
+            <!--  -->
+              <div class="news_update">
+            <span class="news_date">2023年5月11日</span>
+            <div class="topic2">公式サイト</div>
+            <span>
+              <a href="./work.html">ニュース・お知らせの掲載ページをこちらに移転しました。</a
+              >
+              </span>
             </div>
-            <span class="card-url"
-              ><a href="https://random776.github.io/natsuyasumi/" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-            <span class="card-url" style="left: 120px;"
-              ><a href="https://github.com/random776/natsuyasumi" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/kyo_muka.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">教務課お知らせ観測ツール</div>
-            <div class="card__overviewtext">
-              pythonなどを用いて、東大教養学部の教務課のお知らせを無理矢理Lineに届くようにした装置です。まあ、がばがばですが。
+            <!--  -->
+            <hr color="rgb(41, 41, 41)" size="1"/>
+              <div class="page_update">
+            <span class="news_date">2023年4月30日</span>
+            <div class="topic2">Web開発</div>
+            <span>
+              <a href="./news/202304300001.html">展開・因数分解の初級学習ツールを作成しました。</a
+              >
+              </span>
             </div>
-            <span class="card-url"
-              ><a href="https://github.com/random776/kyo_muka" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/ssic.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">ソフトクリームデコレーター</div>
-            <div class="card__overviewtext">
-              ソフトクリームの着せ替えアプリです。うp主の極めて幼稚な意図に気づいた人は何人いただろうか...。まあ、どうでもいいことではあるけれども。
-            </div>
-            <span class="card-url"
-              ><a href="https://ssic-decorator.onrender.com" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-            <span class="card-url" style="left: 120px;"
-              ><a href="https://github.com/random776/soft-cream" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/nauru.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">ナウルさんツイートクリエーター</div>
-            <div class="card__overviewtext">
-              ナウルさんの「一年のn％終了」ツイートを再現したはいいけれど、ひとさまのツイートを真似て何が楽しいのだろう？？
-            </div>
-            <span class="card-url"
-              ><a href="https://nauru-percentage.onrender.com" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-            <span class="card-url" style="left: 120px;"
-              ><a href="https://github.com/random776/nauru" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/sosuu.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">素数判定プログラム</div>
-            <div class="card__overviewtext">
-              わたしが初めてWebに公開し、ツイートしたWebアプリケーションです！ 簡単なhtmlとJavaScriptとで動いていることが特徴です。
-            </div>
-            <span class="card-url"
-              ><a href="https://random-page.onrender.com/prime_number2.html" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/soinsubunkai.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">素因数分解プログラム</div>
-            <div class="card__overviewtext">
-              「素数判定プログラム」を魔改造して、素因数分解ができるようにしました。とある素因数分解が好きなニキに対する献上品です！
-            </div>
-            <span class="card-url"
-              ><a href="https://random-page.onrender.com/prime_number3.html" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/tenkai.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">フラッシュ展開・因数分解</div>
-            <div class="card__overviewtext">
-              中学3年学習範囲の関門の一つである「展開」「因数分解」の初級練習ツールです。内蔵プログラムによりランダムに問題を作り出します。
-            </div>
-            <span class="card-url"
-              ><a href="https://tenkai.onrender.com" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-            <span class="card-url" style="left: 120px;"
-              ><a href="https://github.com/random776/tenkai" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card_format">
-        <div class="card card-skin">
-          <div class="card__imgframe">
-            <img src="./pictures/soinsuu2.jpeg" alt="" style="width: 100%" />
-          </div>
-          <div class="card__textbox">
-            <div class="card__titletext">フラッシュ素因数分解ニキ</div>
-            <div class="card__overviewtext">
-              全国の素因数分解ニキのためだけの、素因数分解の練習ができるツールです。「展開・因数分解」ツールと同じように、乱数生成により問題を作ります。
-            </div>
-            <span class="card-url"
-              ><a href="https://soinsuuniki.onrender.com" class="btn4"
-                >ページを開く</a
-              ></span
-            >
-            <span class="card-url" style="left: 120px;"
-              ><a href="https://github.com/random776/soinsuuniki" class="btn4"
-                >ソースコードを見る</a
-              ></span
-            >
+            <!--  -->
+              <hr color="rgb(41, 41, 41)" size="1"/>
+            <div class="page_update">
+            <span class="news_date">2023年4月25日</span>
+            <div class="topic2">Twitter・広報</div>
+              <span>
+                <a href="./news/202304250001.html">ツイート一時停止のお知らせを通知しました。</a
+                >
+                </span>
+              </div>
+            <!--  -->
+              <hr color="rgb(41, 41, 41)" size="1"/>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
   <!-- 以下メニューバー -->
   <div class="sub_menu">
     <div class="logo2"><img class="logo_area2" src="./pictures/logoimage.jpeg" alt=""></div>
     <div class="header2">
       <header>
           <a href="./index.html" >HOME</a>
-          <a href="./work.html" >最近の作品</a>
+          <a href="./work.html" >ニュース</a>
           <a href="./contact.html" >連絡先（SNS）</a>
           <a href="./helpful.html" >東大理系生お役立ちツール</a>
           <a href="./link.html" >外部リンク</a>
