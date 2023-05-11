@@ -11,11 +11,13 @@ h2 {
   font-weight: 350;
 }
 
+#menu-bar {
+  background-color: rgb(0, 166, 255, 0.813);
+}
+
 #menu-bar ul {
     text-align: center;
-    width: 100%;
     margin: 0px;
-    background-color: rgb(0, 166, 255, 0.813);
 }
 #menu-bar ul li {
     width: max-content;
