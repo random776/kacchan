@@ -1,5 +1,5 @@
 body {
-    font-family: "游ゴシック Light", sans-serif;
+  font-family: "游ゴシック Light", sans-serif;
 }
 
 p {
@@ -11,185 +11,57 @@ h2 {
   font-weight: 350;
 }
 
-#menu-bar {
-  background-color: rgb(0, 166, 255, 0.813);
-}
-
-#menu-bar ul {
-    text-align: center;
-    margin: 0px;
-}
-#menu-bar ul li {
-    width: max-content;
-    margin: 0px;
-    padding: 5px;
-    height: 25px;
-}
-
-#menu-bar ul li a {
-    color: aliceblue;
-}
-
-#nav-content ul {
-    width: 100%;
-    background-color: rgb(0, 166, 255, 0.813);
-}
-
-#nav-content ul li a {
-    color: aliceblue;
-}
-.sonota {
-    margin: 10px;
-}
 
 .color {
-    font-size: 1.2rem;
-    border-bottom: solid 3px skyblue;
-    position: relative;
-  }
-  
+  font-size: 140%;
+  border-bottom: solid 3px skyblue;
+  position: relative;
+}
+
 .color:after {
-    position: absolute;
-    content: " ";
-    display: block;
-    border-bottom: solid 3px #ffc778;
-    bottom: -3px;
-    width: 30%;
-  }
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
+}
 
 .color2 {
-    font-size: 1.1rem;
-    border-bottom: solid 3px rgb(135, 235, 160);
-    position: relative;
-  }
-  
+  font-size: 130%;
+  border-bottom: solid 3px rgb(135, 235, 160);
+  position: relative;
+}
+
 .color2:after {
-    position: absolute;
-    content: " ";
-    display: block;
-    border-bottom: solid 3px #78ffef;
-    bottom: -3px;
-    width: 30%;
-  }
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #78ffef;
+  bottom: -3px;
+  width: 30%;
+}
 
 .color3 {
-    font-size: 1.2rem;
-    border-bottom: solid 3px rgb(29, 255, 195);
-    position: relative;
-  }
-  
+  font-size: 140%;
+  border-bottom: solid 3px rgb(29, 255, 195);
+  position: relative;
+}
+
 .color3:after {
-    position: absolute;
-    content: " ";
-    display: block;
-    border-bottom: solid 3px #a0d7ff;
-    bottom: -3px;
-    width: 30%;
-  }
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #a0d7ff;
+  bottom: -3px;
+  width: 30%;
+}
 
 .color4 {
-  font-size: 1.2rem;
+  font-size: 140%;
   text-align: center;
 }
 
 .height {
-    line-height: 30px;
+  line-height: 30px;
 }
-
-.card {
-  width:auto;
-  width: 100%;
-  position: relative;
-}
-
-.card__imgframe{
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-.card__textbox{
-  width: 100%;
-  height: auto;
-  padding: 15px 15px;
-  background: #ffffff;
-  box-sizing: border-box;
-}
-.card__textbox > * + *{
-  margin-top: 10px;
-}
-.card__titletext{
-  margin: 5px 0px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 125%;
-}
-.card__overviewtext{
-  margin: 15px 0px;
-  font-size: 12px;
-  line-height: 150%;
-}
-
-.card-skin{
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,.2);
-}
-
-.card-url{
-  font-size: 13px;
-  margin: 10px;
-  position: absolute;
-  bottom: 10px;
-}
-
-.card_format {
-  display: inline-block;
-  margin: 5px;
-}
-
-@media screen and (max-width:594px) {
-  .card_style {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .card {
-    height: 350px;
-  }
-}
-
-@media screen and (min-width:594px) {
-  .card_style {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .card {
-    height: 300px;
-  }
-}
-
-@media screen and (min-width:960px) {
-  .card_style {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  .card {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .card_style {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .card {
-    height: 300px;
-  }
-}
-
-

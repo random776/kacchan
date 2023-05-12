@@ -45,6 +45,8 @@
     />
     <link rel="stylesheet" href="./format.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/notice.css" />
+    <link rel="stylesheet" href="./css/card.css" />
   </head>
   <body>
     <header>
@@ -94,50 +96,126 @@
       </div>
     </header>
     <div id="oshirase-viewer">
-    <div id="oshirase">
-      <h2 class="color4">NOTICES</h2>
-      <!--  -->
-      <hr color="rgb(41, 41, 41)" size="1"/>
+      <div id="oshirase">
+        <h2 class="color4">NOTICES</h2>
+        <!--  -->
+        <hr color="rgb(41, 41, 41)" size="1" />
         <div class="page_update">
-      <span class="date">2023年5月11日</span>
-      <span>
-        <a href="./work.html">ニュース・お知らせの掲載ページをこちらに移転しました。</a
-        >
-        </span>
-      </div>
-      <!--  -->
-      <hr color="rgb(41, 41, 41)" size="1"/>
-        <div class="page_update">
-      <span class="date">2023年4月30日</span>
-      <span>
-        <a href="./news/202304300001.html">展開・因数分解の初級学習ツールを作成しました。</a
-        >
-        </span>
-      </div>
-      <!--  -->
-        <hr color="rgb(41, 41, 41)" size="1"/>
-      <div class="page_update">
-      <span class="date">2023年4月25日</span>
-        <span>
-          <a href="./news/202304250001.html">ツイート一時停止のお知らせを通知しました。</a
-          >
+          <span class="date">2023年5月11日</span>
+          <span>
+            <a href="./work.html"
+              >ニュース・お知らせの掲載ページをこちらに移転しました。</a
+            >
           </span>
         </div>
-      <!--  -->
-        <hr color="rgb(41, 41, 41)" size="1"/>
+        <!--  -->
+        <hr color="rgb(41, 41, 41)" size="1" />
+        <div class="page_update">
+          <span class="date">2023年4月30日</span>
+          <span>
+            <a href="./news/202304300001.html"
+              >展開・因数分解の初級学習ツールを作成しました。</a
+            >
+          </span>
+        </div>
+        <!--  -->
+        <hr color="rgb(41, 41, 41)" size="1" />
+        <div class="page_update">
+          <span class="date">2023年4月25日</span>
+          <span>
+            <a href="./news/202304250001.html"
+              >ツイート一時停止のお知らせを通知しました。</a
+            >
+          </span>
+        </div>
+        <!--  -->
+        <hr color="rgb(41, 41, 41)" size="1" />
+      </div>
     </div>
-  </div>
+    <!-- ここから内容 -->
     <div class="sonota">
-      <h2 class="color">このサイトの概要</h2>
-      <p style="margin: 10px">
-        このページは、webページの作成などが趣味のプログラム初心者「かっちゃん」の練習帳・格納庫「ランゲルハンス棟」です。ゆっくりしていってね！
+      <h2 class="color">このサイトについて</h2>
+      <p>
+        こちらは、Webツール制作が趣味の「かっちゃん」によって運営されている個人サイト「ランゲルハンス棟」です。ご自由にご覧ください！
       </p>
-      <h2 class="color">最近の作品</h2>
       <div class="card_style">
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
-              <img src="./pictures/gogatsubyo.jpeg" alt="" style="width: 100%" />
+              <img src="./pictures/focus.jpg" alt="" style="width: 100%" />
+            </div>
+            <div class="card__textbox">
+              <div class="card__titletext" style="font-family: 'Comic Sans MS'">
+                Kacchan Focus
+              </div>
+              <div
+                class="card__overviewtext"
+                style="
+                  font-size: 100%;
+                  font-family: 'Hiragino Maru Gothic Pro W4';
+                "
+              >
+                ここでは、最近制作したWebツールを紹介しております。ぜひ見ていってください！
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card_format">
+          <div class="card card-skin">
+            <div class="card__imgframe">
+              <img
+                src="./pictures/utokyo_problem.jpeg"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="card__textbox">
+              <div class="card__titletext" style="font-size: 14px; margin: 0px">
+                あの、東大さん、
+              </div>
+              <div
+                class="card__overviewtext"
+                style="font-size: 14px; margin: 0px"
+              >
+                東大150周年まであと
+              </div>
+              <div
+                class="card__overviewtext"
+                style="font-size: 14px; margin: 2px 0px"
+              >
+                <span
+                  id="countdown-day"
+                  class="countdown-time"
+                  style="
+                    font-size: 18px;
+                    padding: 2px 2px 2px 0px;
+                    color: blueviolet;
+                  "
+                ></span
+                ><span>日</span>
+              </div>
+              <div class="card__titletext" style="font-size: 14px; margin: 0px">
+                なんですよね。気が早すぎですね！
+              </div>
+              <span class="card-url"
+                ><a href="https://www.u-tokyo.ac.jp/ja/index.html" class="btn4"
+                  >問題のページを開く</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card_format">
+          <div class="card card-skin">
+            <div class="card__imgframe">
+              <img
+                src="./pictures/gogatsubyo.jpeg"
+                alt=""
+                style="width: 100%"
+              />
             </div>
             <div class="card__textbox">
               <div class="card__titletext">あなたが五月病になるまで</div>
@@ -149,7 +227,7 @@
                   >ページを開く</a
                 ></span
               >
-              <span class="card-url" style="left: 120px;"
+              <span class="card-url" style="left: 120px"
                 ><a href="https://github.com/random776/natsuyasumi" class="btn4"
                   >ソースコードを見る</a
                 ></span
@@ -157,6 +235,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -175,6 +254,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -190,7 +270,7 @@
                   >ページを開く</a
                 ></span
               >
-              <span class="card-url" style="left: 120px;"
+              <span class="card-url" style="left: 120px"
                 ><a href="https://github.com/random776/soft-cream" class="btn4"
                   >ソースコードを見る</a
                 ></span
@@ -198,6 +278,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -213,7 +294,7 @@
                   >ページを開く</a
                 ></span
               >
-              <span class="card-url" style="left: 120px;"
+              <span class="card-url" style="left: 120px"
                 ><a href="https://github.com/random776/nauru" class="btn4"
                   >ソースコードを見る</a
                 ></span
@@ -221,6 +302,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -229,20 +311,28 @@
             <div class="card__textbox">
               <div class="card__titletext">素数判定プログラム</div>
               <div class="card__overviewtext">
-                わたしが初めてWebに公開し、ツイートしたWebアプリケーションです！ 簡単なhtmlとJavaScriptとで動いていることが特徴です。
+                わたしが初めてWebに公開し、ツイートしたWebアプリケーションです！
+                簡単なhtmlとJavaScriptとで動いていることが特徴です。
               </div>
               <span class="card-url"
-                ><a href="https://random-page.onrender.com/prime_number2.html" class="btn4"
+                ><a
+                  href="https://random-page.onrender.com/prime_number2.html"
+                  class="btn4"
                   >ページを開く</a
                 ></span
               >
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
-              <img src="./pictures/soinsubunkai.jpeg" alt="" style="width: 100%" />
+              <img
+                src="./pictures/soinsubunkai.jpeg"
+                alt=""
+                style="width: 100%"
+              />
             </div>
             <div class="card__textbox">
               <div class="card__titletext">素因数分解プログラム</div>
@@ -250,13 +340,16 @@
                 「素数判定プログラム」を魔改造して、素因数分解ができるようにしました。とある素因数分解が好きなニキに対する献上品です！
               </div>
               <span class="card-url"
-                ><a href="https://random-page.onrender.com/prime_number3.html" class="btn4"
+                ><a
+                  href="https://random-page.onrender.com/prime_number3.html"
+                  class="btn4"
                   >ページを開く</a
                 ></span
               >
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -272,7 +365,7 @@
                   >ページを開く</a
                 ></span
               >
-              <span class="card-url" style="left: 120px;"
+              <span class="card-url" style="left: 120px"
                 ><a href="https://github.com/random776/tenkai" class="btn4"
                   >ソースコードを見る</a
                 ></span
@@ -280,6 +373,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
         <div class="card_format">
           <div class="card card-skin">
             <div class="card__imgframe">
@@ -295,7 +389,7 @@
                   >ページを開く</a
                 ></span
               >
-              <span class="card-url" style="left: 120px;"
+              <span class="card-url" style="left: 120px"
                 ><a href="https://github.com/random776/soinsuuniki" class="btn4"
                   >ソースコードを見る</a
                 ></span
@@ -303,6 +397,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
       </div>
     </div>
     <!-- 以下メニューバー -->
@@ -326,3 +421,18 @@
     <!-- メニューバー終了 -->
   </body>
 </html>
+<script>
+  let countdown = setInterval(function () {
+    const now = new Date(); //今の日時
+    const target = new Date("2027/4/12 0:00:00");
+    const remain_time = target - now; //差分を取る（ミリ秒で返ってくる）
+    if (remain_time < 0) {
+      return false;
+    }
+    const difDay = Math.floor(remain_time / 1000 / 60 / 60 / 24);
+    document.getElementById("countdown-day").textContent = difDay;
+    if (remain_time < 0) {
+      clearInterval(countdown);
+    }
+  }, 1000);
+</script>

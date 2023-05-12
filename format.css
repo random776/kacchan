@@ -4,12 +4,73 @@ body {
 
 header {
   color: #fff;
-  padding:0px;
+  padding: 0px;
   background-color: black;
 }
 
+/* ロゴに関する部分 */
 .logo-area {
   padding: 10px;
+}
+
+.header-logo-menu {
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+/*ロゴやサイトタイトルをセンタリング*/
+.logo-area {
+  text-align: center;
+  margin: auto;
+}
+
+header ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+/* メニューバーに関する部分 */
+#menu-bar {
+  background-color: rgb(0, 166, 255, 0.813);
+}
+
+#menu-bar ul {
+  text-align: center;
+  margin: 0px;
+}
+
+#menu-bar ul li {
+  width: max-content;
+  margin: 0px;
+  padding: 5px;
+  height: 25px;
+}
+
+#menu-bar ul li a {
+  color: aliceblue;
+}
+
+/* ハンバーガーメニューに関する部分 */
+#nav-content ul {
+  width: 100%;
+  background-color: rgb(0, 166, 255, 0.813);
+}
+
+#nav-content ul li a {
+  color: aliceblue;
+}
+.sonota {
+  margin: 10px;
 }
 
 #nav-drawer {
@@ -19,7 +80,7 @@ header {
 
 /*チェックボックス等は非表示に*/
 .nav-unshown {
-  display:none;
+  display: none;
 }
 
 /*アイコンのスペース*/
@@ -31,14 +92,16 @@ header {
 }
 
 /*ハンバーガーの形をCSSで表現*/
-#nav-open span, #nav-open span:before, #nav-open span:after {
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
   position: absolute;
-  height: 3px;/*線の太さ*/
-  width: 25px;/*長さ*/
+  height: 3px; /*線の太さ*/
+  width: 25px; /*長さ*/
   border-radius: 3px;
   background: rgb(255, 255, 255);
   display: block;
-  content: '';
+  content: "";
   cursor: pointer;
 }
 #nav-open span:before {
@@ -59,7 +122,7 @@ header {
   height: 100%;
   background: rgb(0, 0, 0);
   opacity: 0;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /*メニューの中身*/
@@ -70,10 +133,10 @@ header {
   left: 0;
   z-index: 9999;
   width: 90%;
-  max-width: 330px;/*最大幅（お好みで調整を）*/
+  max-width: 330px; /*最大幅（お好みで調整を）*/
   height: 100%;
   background: #fff;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
@@ -81,104 +144,179 @@ header {
 /*チェックがついたら表示させる*/
 #nav-input:checked ~ #nav-close {
   display: block;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #nav-input:checked ~ #nav-content {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
 
-.header-logo-menu{
- display: flex;
- display: -moz-flex;
- display: -o-flex;
- display: -webkit-flex;
- display: -ms-flex;
- flex-direction: row;
- -moz-flex-direction: row;
- -o-flex-direction: row;
- -webkit-flex-direction: row;
- -ms-flex-direction: row;
+/* ボタンここから */
+.btn4 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 81, 255);
+}
+.btn4::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #82a1ff;
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+}
+.btn4:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
-/*ロゴやサイトタイトルをセンタリング*/
-.logo-area{text-align:center;margin:auto;}
-
-header ul {
-  overflow:hidden;
-  list-style:none;
+.btn2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #8daaff;
+}
+/* 写真スライドここから */
+.slide {
+  position: relative;
+  width: 100%;
+  padding-top: 41.7%;
+  overflow: hidden;
   margin: 0 auto;
-  z-index: 20;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item1 {
+  animation: slide1 40s infinite;
+}
+.item2 {
+  animation: slide2 40s infinite;
+}
+.item3 {
+  animation: slide3 40s infinite;
+}
+.item4 {
+  animation: slide4 40s infinite;
+}
+@keyframes slide1 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
   }
-
-  .btn4{
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    display:inline-block;
-    color: rgb(0, 81, 255);
-    }
-    .btn4::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #82a1ff;
-    display: block;
-    -webkit-transform-origin: right top;
-    -ms-transform-origin: right top;
-    transform-origin: right top;
-    -webkit-transform: scale(0, 1);
-    -ms-transform: scale(0, 1);
-    transform: scale(0, 1);
-    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-    }
-    .btn4:hover::before {
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    transform: scale(1, 1);
-    }
-
-
-  .btn2{
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    display:inline-block;
-    border-bottom: 2px solid #8daaff;
-    }
-/* 旧システムここから（写真スライド） */
-    .slide { position: relative; width: 100%; padding-top: 41.7%; overflow: hidden; margin: 0 auto;
-    }
-    .item1, .item2, .item3 ,.item4{ position: absolute; top:0; left:0; width: 100%; height: 100%; background-size: cover; background-repeat: no-repeat;
-    }
-    .item1{ animation: slide1 40s infinite;
-    }
-    .item2{ animation: slide2 40s infinite;
-    }
-    .item3{ animation: slide3 40s infinite;
-    }
-    .item4{ animation: slide4 40s infinite;
-    }
-    @keyframes slide1 { 0% {opacity: 1; transform: scale(1.0);} 20% {opacity: 1;} 30% {opacity: 1;} 40% {opacity: 0; transform: scale(1.1);} 90% {opacity: 0} 100% {opacity: 1; transform: scale(1.0);}
-    }
-    @keyframes slide2 { 0% {opacity: 0;} 30% {opacity: 0; transform: scale(1.1);} 40% {opacity: 1;} 50% {opacity: 1;} 60% {opacity: 0; transform: scale(1.0);} 100% {opacity: 0;}
-    }
-    @keyframes slide3 { 0% {opacity: 0;} 50% {opacity: 0; transform: scale(1.0);} 60% {opacity: 1;} 70% {opacity: 1;} 90% {opacity: 0; transform: scale(1.1);} 100% {opacity: 0;}
-    }
-    @keyframes slide4 { 0% {opacity: 0;} 70% {opacity: 0; transform: scale(1.1);} 80% {opacity: 1;} 90% {opacity: 1;} 100% {opacity: 0; transform: scale(1.0);}
-    }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slide2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide4 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
 /* ここまで */
+
 /* 以下は下部メニューバー */
 
 .sub_menu {
@@ -206,76 +344,27 @@ header ul {
   margin: 15px;
   font-size: 0.8rem;
 }
-#oshirase a {
-  color: black;
-  text-decoration: none;
-}
-
-.date {
-  font-weight: 500;
-}
-
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   #menu-bar {
-    display:none;
+    display: none;
   }
   .logo {
     width: 220px;
   }
-  #oshirase {
-    font-size: 80%;
-  }
-  #oshirase h2 {
-    font-size: 1.1rem;
-  }
-
-#oshirase span {
-    padding: 5px 10px;
-    display: block;
-  }
-
-#oshirase-viewer {
-  background-color: rgb(220, 220, 220);
-  padding: 20px;
-}
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width: 767px) {
   #nav-drawer {
-    display:none;
+    display: none;
   }
 
-  #menu-bar 
-  ul li {
+  #menu-bar ul li {
     display: inline-block;
-     padding: 26px 10px 20px 10px;
-    }
-  
-    .logo {
-      width: 350px;
-      padding: 15px;
-    }
-  
-    #oshirase {
-      font-size: 95%;
-    }
-    #oshirase h2 {
-      font-size: 1.3rem;
-    }
-  
-  #oshirase span {
-      padding: 10px 0px;
-    }
-  
-  #oshirase-viewer {
-    background-color: rgb(220, 220, 220);
-    padding: 30px;
+    padding: 14px 10px 10px 10px;
   }
-  .page_update {
-    display: flex;
+
+  .logo {
+    width: 350px;
+    padding: 15px;
   }
-  .date {
-    width: 20%;
-  }
-  }
+}
